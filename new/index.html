@@ -6,24 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <script>
-        var videos = document.querySelectorAll('video');
-        for (var i = 0; i < videos.length; i++)
-            videos[i].addEventListener('play', function () { pauseAll(this) }, true);
-
-
-        function pauseAll(elem) {
-            for (var i = 0; i < videos.length; i++) {
-                //Is this the one we want to play?
-                if (videos[i] == elem) continue;
-                //Have we already played it && is it already paused?
-                if (videos[i].played.length > 0 && !videos[i].paused) {
-                    // Then pause it now
-                    videos[i].pause();
-                }
-            }
-        }
-    </script>
     <style>
         * {
             margin: 0%;
@@ -116,22 +98,23 @@
         }
 
         iframe {
-            margin: 50px;
+            margin: 45px;
             border-radius: 40px;
             height: 350px;
         }
 
-        iframe:hover{
+        iframe:hover {
             border-radius: 50px;
             height: 380px;
         }
 
-        footer{
+        footer {
             background-color: black;
             color: white;
             text-align: center;
-            font-size: 18px;
+            font-size: 1.2vw;
         }
+
         @media only screen and (max-width: 750px) {
             .list a {
                 font-size: 18px;
@@ -179,33 +162,22 @@
         <h1>My YouTube Videos</h1>
         <div class="grid-container">
             <iframe class="padded" src="https://www.youtube.com/embed/kknKs7cAcO8" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                frameborder="0"></iframe>
             <iframe class="padded" src="https://www.youtube.com/embed/XqZsoesa55w" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                frameborder="0"></iframe>
             <iframe class="padded" src="https://www.youtube.com/embed/nfs8NYg7yQM" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                frameborder="0"></iframe>
             <iframe class="padded" src="https://www.youtube.com/embed/bWLgA4jUkuw" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                frameborder="0"></iframe>
             <iframe class="padded" src="https://www.youtube.com/embed/LPipcof6dYQ" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                frameborder="0"></iframe>
             <iframe class="padded" src="https://www.youtube.com/embed/25ROFXjoaAU" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                frameborder="0"></iframe>
         </div>
     </section>
 </body>
 <footer>
     <p>Copyright &copy; of this site belong to Ritik Agarwal.</p>
 </footer>
+
 </html>
