@@ -89,7 +89,7 @@
  h1 {
      width: 100vw;
      text-align: center;
-     border: 2px solid blue;
+     /*border: 2px solid blue;*/
      font-family: 'Baloo Bhai 2', cursive;
      font-size: 60px;
      color: white;
