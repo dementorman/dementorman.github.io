@@ -89,13 +89,13 @@
  h1 {
      width: 100vw;
      text-align: center;
-     /* border: 2px solid blue; */
+     border: 2px solid blue;
      font-family: 'Baloo Bhai 2', cursive;
      font-size: 60px;
      color: white;
      opacity: 0.9;
      margin: 50px 0px;
-     /*z-index: -1;*/
+     z-index: 10;
  }
 
  .grid-container {
@@ -117,7 +117,7 @@
      /* border-radius: 50px;
             height: 380px; */
      transform: scale(1.2);
-     z-index: -1;
+     z-index: 10;
  }
 
  #pic {
@@ -137,7 +137,7 @@
 
  #pic .pics:hover {
      transform: scale(1.3);
-     /*z-index: -1;*/
+     z-index: 10;
  }
 
  #text {
