@@ -189,6 +189,7 @@
      }
      h1 {
          font-size: 45px;
+         color: white;
      }
      #about h1 {
          font-size: 30px;
@@ -204,6 +205,7 @@
      }
      h1 {
          font-size: 35px;
+         color: white;
      }
      iframe {
          height: 300px;
