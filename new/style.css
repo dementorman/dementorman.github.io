@@ -46,12 +46,15 @@
      overflow: hidden;
  }
 
-.welcome {
-    width: 100vw;
-    position: absolute;
-    top: 175px;
+ .welcome {
+     width: 100vw;
+     position: absolute;
+     top: 25vh;
  }
- 
+
+ /* .welcome h1 {
+     padding: 30px 3vw;
+ } */
 
  #image {
      /* border: 2px solid green; */
@@ -138,7 +141,7 @@
 
  .images {
      width: fit-content;
-     border: 2px solid green;
+     /* border: 2px solid green; */
      display: flex;
      justify-content: center;
      align-items: center;
@@ -226,31 +229,41 @@
      #about p {
          font-size: 20px;
      }
-     .video video {
-         display: none;
-     }
-     .video {
-         background: url("back.png") no-repeat center center/cover;
+ }
+ @media screen and (max-width: 500px) {
+     .welcome h1{
+         font-size: 35px;
      }
  }
-
+ 
  @media screen and (max-width: 450px) {
      .list a {
          font-size: 14px;
-     }
+        }
      h1 {
          font-size: 35px;
      }
      iframe {
          height: 300px;
-     }
+        }
      footer {
          font-size: 12px;
-     }
-     #about h1 {
-         font-size: 27px;
-     }
-     #about p {
-         font-size: 18px;
-     }
- }
+        }
+        #about h1 {
+            font-size: 27px;
+        }
+        #about p {
+            font-size: 18px;
+        }
+        .video video {
+            display: none;
+        }
+        .video {
+            background: url("back.png") no-repeat center center/cover;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .welcome h1{
+            font-size: 25px;
+        }
+    }
