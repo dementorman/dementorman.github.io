@@ -16,11 +16,11 @@
 <body>
     <a id="top"></a>
     <div class="navbar">
-        <div id="image"><img src="logo4.png" alt="My Logo"></div>
+        <a href="http://dementorman.github.io/new"><div id="image"><img src="logo4.png" alt="My Logo"></div></a>
         <ul class="menu">
             <li class="list"><a href="#top">Home</a></li>
             <li class="list"><a href="#mainbody">YouTube</a></li>
-            <li class="list"><a href="#pic">Drawings</a></li>
+            <li class="list"><a href="#pic-section">Drawings</a></li>
             <li class="list"><a href="#about">About</a></li>
         </ul>
 
@@ -31,7 +31,10 @@
         </div> -->
     </div>
     <div class="video">
-        <video src="back3.mp4" autoplay preload muted loop type="video/mp4"></video>
+        <video autoplay preload muted loop type="video/mp4">
+            <source id="big" src="back1.mp4">
+            <source id="small" src="back2.mp4">
+        </video>
     </div>
     <div class=welcome>
         <h1>Welcome to my Website</h1>
@@ -67,6 +70,7 @@
     </div>
     <hr style="width:85vw; margin: 30px auto; opacity: 0.7; z-index: -1" />
     <div id="pic-section">
+        <br>
         <h1>My Drawings</h1>
         <div class="images">
             <img src="pic/pic1.jpg" alt="" class="pic">

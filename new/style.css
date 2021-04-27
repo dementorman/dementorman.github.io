@@ -40,11 +40,26 @@
  }
 
  .video {
-     /* border: 2px solid red; */
+     border: 2px solid red;
      position: relative;
      top: -50px;
      height: 100vh;
      overflow: hidden;
+ }
+
+ @media screen and (max-width: 400px) {
+     .big {
+         display: none;
+     }
+     video {
+         height: 100vh;
+     }
+ }
+
+ @media screen and (min-width: 401px) {
+     .small {
+         display: none;
+     }
  }
 
  .welcome {
