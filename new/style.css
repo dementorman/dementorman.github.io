@@ -1,6 +1,7 @@
  * {
      margin: 0%;
      padding: 0%;
+     box-sizing: border-box;
  }
 
  html {
@@ -47,14 +48,21 @@
  }
 
  .welcome {
+     /* border: 2px solid red; */
      width: 100vw;
      position: absolute;
-     top: 25vh;
+     top: 20vh;
+     text-align: center;
+     /* display: flex;
+     justify-content: center;
+     align-items: center; */
  }
 
- /* .welcome h1 {
-     padding: 30px 3vw;
- } */
+ .welcome h1 {
+     /* border: 2px solid blue; */
+     width: 100vw;
+     padding: 0 8vw;
+ }
 
  #image {
      /* border: 2px solid green; */
@@ -230,40 +238,42 @@
          font-size: 20px;
      }
  }
- @media screen and (max-width: 500px) {
-     .welcome h1{
+
+ /* @media screen and (max-width: 500px) {
+     .welcome h1 {
          font-size: 35px;
      }
- }
- 
+ } */
+
  @media screen and (max-width: 450px) {
      .list a {
          font-size: 14px;
-        }
+     }
      h1 {
          font-size: 35px;
      }
      iframe {
          height: 300px;
-        }
+     }
      footer {
          font-size: 12px;
-        }
-        #about h1 {
-            font-size: 27px;
-        }
-        #about p {
-            font-size: 18px;
-        }
-        .video video {
-            display: none;
-        }
-        .video {
-            background: url("back.png") no-repeat center center/cover;
-        }
-    }
-    @media screen and (max-width: 400px) {
-        .welcome h1{
-            font-size: 25px;
-        }
-    }
+     }
+     #about h1 {
+         font-size: 27px;
+     }
+     #about p {
+         font-size: 18px;
+     }
+     /* .video video {
+         display: none;
+     }
+     .video {
+         background: url("back.png") no-repeat center center/cover;
+     } */
+ }
+
+ /* @media screen and (max-width: 400px) {
+     .welcome h1 {
+         font-size: 25px;
+     }
+ } */
