@@ -10,17 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
 
 </head>
 
 <body>
     <a id="top"></a>
     <div class="navbar">
-        <a href="http://dementorman.github.io/new"><div id="image"><img src="logo4.png" alt="My Logo"></div></a>
+        <a href="http://dementorman.github.io/new">
+            <div id="image"><img src="logo4.png" alt="My Logo"></div>
+        </a>
         <ul class="menu">
             <li class="list"><a href="#top">Home</a></li>
             <li class="list"><a href="#mainbody">YouTube</a></li>
             <li class="list"><a href="#pic-section">Drawings</a></li>
+            <li class="list"><a href="#coin-section">Coins</a></li>
             <li class="list"><a href="#about">About</a></li>
         </ul>
 
@@ -82,7 +93,23 @@
         </div>
     </div>
     <hr style="width:85vw; margin: 30px auto; opacity: 0.7; z-index: -1;" />
+    <!-- <a id="coins"></a>
+    <br> -->
+    <div id="coin-section" style="height: 530px;">
+        <br>
+        <h1>My Coins</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="coins/01.png" alt="Coin Pic" style="border-radius:20px;"></div>
+            <div class="item"><img src="coins/02.png" alt="Coin Pic" style="border-radius:20px;"></div>
+            <div class="item"><img src="coins/03.png" alt="Coin Pic" style="border-radius:20px;"></div>
+            <div class="item"><img src="coins/04.png" alt="Coin Pic" style="border-radius:20px;"></div>
+            <div class="item"><img src="coins/05.png" alt="Coin Pic" style="border-radius:20px;"></div>
+            <div class="item"><img src="coins/06.png" alt="Coin Pic" style="border-radius:20px;"></div>
+        </div>
+    </div>
+    <hr style="width:85vw; margin: 30px auto; opacity: 0.7; z-index: -1;" />
     <div id="about">
+        <br>
         <h1>About Me</h1>
         <div id="text">
             <p>About Section is not availabe yet!</p>
@@ -91,6 +118,35 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            stagePadding: 30,
+            nav: false,
+            dotsEach: true,
+            // autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
 <footer>
     <p>Copyright &copy; of this site belongs to Dementorman.</p>
